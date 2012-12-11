@@ -1,5 +1,5 @@
 ## Description ##
-This is the personal blog of Nicolas Wormser. It is generated using [Jekyll](http://github.com/mojombo/jekyll)
+This is the personal blog of Dan Kjær Jessen. It is generated using [Jekyll](http://github.com/mojombo/jekyll)
 
 ## ToDo list ##
 * TBA
