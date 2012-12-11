@@ -32,6 +32,7 @@ _site/
 ######################
 .DS_Store
 .DS_Store?
+.sass-cache
 ._*
 .Spotlight-V100
 .Trashes

@@ -1,0 +1,12 @@
+url: http://danjessen.dk
+title: danjessen
+description: Blog of Dan Kjær Jessen - Front-End Mercenary and allround nice guy
+
+
+permalink: /post/:title/
+
+future: false
+auto: true
+server: true
+
+exclude: ["README.md", "config.rb"]

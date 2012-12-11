@@ -1,0 +1,205 @@
+/* Table of Contents
+
+:: Theme settings
+:: Foundation settings
+
+*/
+
+// --------------------------------------------------
+// Theme settings: 
+// --------------------------------------------------
+
+// Break points
+$break-large: 1440px;
+$break-medium: 1280px;
+$break-small: 768px;
+
+// Design
+
+$themeBodyColor: #fff;
+$themeMainColor: #6f2525;
+$themeSecondaryColor: #35435f;
+$themeFontColor: #4f504f;
+
+$themeImgBorderColor: #bebdbd;
+$themeImgPadding: 9px;
+$themeImgBgColor: #fff;
+$themeImgRadius: 2px;
+
+$themeBorderColor: $themeMainColor;
+$themeBorderSecondaryColor: $themeSecondaryColor;
+
+$themeSeparatorColor: #bebdbd;
+$themeTopBoxBgColor: #000;
+$themeTopBoxFontColor: #fff;
+
+$themeBottomBoxBgColor: $themeMainColor;
+$themeBottomBoxFontColor: #fff;
+$themeBottomBoxLinkColor: $themeSecondaryColor;
+
+
+// Slider
+$themeSliderCaptionFontColor: #fff;
+
+// Font
+
+$themeFontBodyColor: $themeFontColor;
+$themeFontHeaderColor: $themeFontColor;
+$themeFontLinkColor: $themeMainColor;
+$themeFontLinkHoverColor: $themeSecondaryColor;
+$themeFontLinkWeight: bold;
+
+// Menu
+
+$themeMenuFont: "Georgia", serif;
+$themeMenuFontSize: 18px;
+$themeMenuFontWeight: normal;
+$themeMenuSeparatorColor: #cdcdcd;
+$themeMenuBgColor: $themeBodyColor;
+$themeMenuNormalColor: #656565;
+$themeMenuHoverColor: $themeMainColor;
+$themeMenuSelectedColor: $themeMainColor;
+$themeMenuMobileSelectedColor: #fff;
+$themeMenuMobileSeperatorColor: #995959;
+$themeMenuIconsBgColor: $themeMainColor;
+$themeMenuIconsFontColor: #e4d6d6;
+
+// Submenu
+$themeSubmenuFont: "Georgia", serif;
+$themeSubmenuFontWeight: normal;
+
+// level 2
+$themeSubmenu2FontSize: 16px;
+$themeSubmenu2NormalColor: #656565;
+$themeSubmenu2SelectedColor: #000;
+$themeSubmenu2HoverColor: $themeMainColor;
+$themeSubmenu2BorderColor: #dddddd;
+$themeSubmenu2BorderHoverColor: $themeMainColor;
+$themeSubmenu2BorderSelectedColor: $themeMainColor;
+
+// level 3
+$themeSubmenu3FontSize: 14px;
+$themeSubmenu3NormalColor: $themeMainColor;
+$themeSubmenu3SelectedColor: #000;
+$themeSubmenu3HoverColor: $themeMainColor;
+$themeSubmenu3BorderColor: #9f6e6e;
+
+// level 4
+$themeSubmenu4FontSize: 12px;
+$themeSubmenu4NormalColor: $themeMainColor;
+$themeSubmenu4SelectedColor: #000;
+$themeSubmenu4HoverColor: $themeMainColor;
+
+// --------------------------------------------------
+// Foundation settings
+//
+// Documentation: 
+// http://foundation.zurb.com/docs/gem-install.php
+// --------------------------------------------------
+
+// imports
+@import "vendor/foundation/foundation/common/ratios";
+
+// Grid Settings
+
+// $rowWidth: 1000px;
+// $columnGutter: 30px;
+// $totalColumns: 12;
+// $mobileTotalColumns: 4;
+
+// Text Direction Settings
+
+// $textDirection: ltr; // Controls default global text direction, 'rtl' or 'ltr'
+
+// Colors Settings
+
+$mainColor: $themeMainColor;
+$secondaryColor: $themeSecondaryColor;
+$alertColor: #c60f13;
+$successColor: #5da423;
+$txtColor: $themeFontColor;
+$highlightColor: $themeMainColor;
+$black: #000;
+$white: #fff;
+$shinyEdge: rgba(#fff, .5);
+$darkEdge: rgba(#000, .2);
+
+// Typography Settings
+
+$headerFontFamily: "Georgia", serif;
+$headerFontWeight: bold;
+$headerFontColor: $themeFontHeaderColor;
+$bodyFontFamily: "Georgia", serif;
+$bodyFontWeight: normal;
+$bodyFontColor: $themeFontColor;
+$bodyFontLineHeight: 1.4;
+
+// Button Settings
+
+$buttonRadius: 3px;
+$btnBase: 10px;
+
+$tinyBtnBase: $btnBase - 5;
+$smallBtnBase: $btnBase - 3;
+$largeBtnBase: $btnBase + 5;
+
+// Form Settings
+
+$formSpacing: 12px;
+
+// Tab Settings
+
+// $tabHeight: 40px;
+
+// Nav Bar Settings
+
+$navBarHeight: 40px;
+$navFlyoutBaseWidth: 250px;
+
+// UI Settings
+
+// $thumbRadius: 3px;
+
+// $progBarHeight: 25px;
+// $progBarBorderColor: darken($white, 20%);
+// $progBarBorderSize: 1px;
+// $progBarPad: 2px;
+
+// Modular Scale
+
+// $ratio: $golden;
+// $baseFontSize: 14px;
+// $importantModNum: 44px;
+
+// Tooltip Settings
+
+// $hasTipBorderBottom: dotted 1px #ccc;
+// $hasTipFontWeight: bold;
+// $hasTipFontColor: #333;
+// $hasTipBorderBottomHover: dotted 1px darken($mainColor, 20%);
+// $hasTipFontColorHover: $mainColor;
+// $tooltipBackgroundColor: #000;
+// $tooltipBackgroundOpacity: 0.85;
+// $tooltipFontSize: 12;
+// $tooltipFontWeight: bold;
+// $tooltipFontColor: #fff;
+// $tapToCloseFontSize: 10;
+// $tapToCloseFontWeight: normal;
+// $tapToCloseFontColor: #888;
+// $tooltipFontSizeScreenSmall: 14;
+// $tooltipBackgroundOpacityScreenSmall: 0.85;
+
+// Top Bar Settings
+
+// $topBarBgColor: #222;
+// $topBarHeight: 45px;
+// $topBarBtmMargin: 30px;
+// $topBarTitleWeight: bold;
+// $topBarTitleSize: ms(1);
+// $topBarLinkColor: $white;
+// $topBarLinkWeight: bold;
+// $topBarLinkSize: ms(0) - 1;
+// $topBarDropToggleSize: 5px;
+// $topBarSearchWidth: 200px;
+// $topBarBreakPoint: 940px; // Change to 9999px for always mobile layout
+// $topBarNavToggleSize: 8px;
