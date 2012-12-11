@@ -1,0 +1,26 @@
+body { 
+  font-family: Trebuchet MS, sans-serif;
+}
+
+.intro { 
+  width: 260px; 
+  margin: 20px auto;
+}
+
+.intro img { 
+  float: left; 
+  margin-right: 20px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 0 0 #f1f1f1;
+  box-shadow: 0 2px 0 0 #f1f1f1;        
+}
+
+.intro h1 { font-size: 24px; }
+
+.intro h1,
+.intro p { 
+  margin: 0; 
+  color: #777; 
+  text-shadow: 0 2px 0 #f1f1f1;
+  /* text-transform: uppercase; */
+}
