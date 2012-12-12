@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>danjessen</title>
+        <link>http://danjessen.dk</link>
+        <atom:link href="http://danjessen.dk/rss.xml" rel="" type="application/rss+xml" />
+        <description>Blog of Dan Kjær Jessen - Front-End Mercenary and allround nice guy</description>
+        <language>sv-se</language>
+        <pubDate>Wed, 12 Dec 2012 15:56:11 +0100</pubDate>
+        <lastBuildDate>Wed, 12 Dec 2012 15:56:11 +0100</lastBuildDate>
+
+        
+
+    </channel>
+</rss>
