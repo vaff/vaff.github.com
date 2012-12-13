@@ -6,27 +6,27 @@
 <!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="da"> <!--<![endif]-->
  <head>
   <meta charset="utf-8">
-  <title>{{ site.title }}{% if page.title %} &mdash; {{ page.title }}{% endif %}</title>
+  <title>{{ site.title }}{% if page.title %} &middot; {{ page.title }}{% endif %}</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  
+
   <!-- normal meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="author" content="danjessen">  
+  <meta name="author" content="danjessen">
 
   <!-- facebook meta -->
-  <meta property="og:title" content="{{ site.title }}{% if page.title %} &mdash; {{ page.title }}{% endif %}">
+  <meta property="og:title" content="{{ site.title }}{% if page.title %} &middot; {{ page.title }}{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta property="og:image" content="{% if page.image %}{{ site.dropbox }}{{ page.image }}{% else %}http://graph.facebook.com/danjessen/picture{% endif %}">
-  
-  
+
   <!-- dns cacheing -->
   <link href="//ajax.googleapis.com" rel="dns-prefetch">
   <link href="//fonts.googleapis.com" rel="dns-prefetch">
   <link href="//html5shiv.googlecode.com" rel="dns-prefetch">
   <link href="//cdn.danjessen.dk" rel="dns-prefetch">
-  
-  <link href="static/css/screen.css" rel="stylesheet">
+  <link href="//dl.dropbox.com/" rel="dns-prefetch">
+
+  <link href="/static/css/screen.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
