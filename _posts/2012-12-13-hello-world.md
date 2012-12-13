@@ -25,7 +25,7 @@ Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean comm
 
 **Hvad med noget kode?**
 
-```javascript
+{% highlight javascript %}
 $(function () {
     var $nav = $('#main');
     $nav.animate({left: '0'}, 500, function () {
@@ -36,18 +36,7 @@ $(function () {
         });
     });
 });
-```
-
-    $(function () {
-        var $nav = $('#main');
-        $nav.animate({left: '0'}, 500, function () {
-            $nav.find('ul li')
-            .delay(500)
-            .each(function(index) {
-                $(this).delay(200*index).fadeIn(200);
-            });
-        });
-    });
+{% endhighlight %}
 
 
 Inline kode er også en mulighed ```<h1>Hello World</h1>```
