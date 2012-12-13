@@ -25,7 +25,7 @@ Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean comm
 
 **Hvad med noget kode?**
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 $(function () {
     var $nav = $('#main');
     $nav.animate({left: '0'}, 500, function () {
