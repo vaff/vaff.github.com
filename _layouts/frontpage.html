@@ -1,5 +1,12 @@
 {% include html_header.html %}
 {% include header.html %}
 {{ content }}
+
+<ul>
+{% for cat in site.categories %}
+  <li>{{ cat }}</li>
+{% endfor %}
+</ul>
+
 {% include footer.html %}
 {% include html_footer.html %}

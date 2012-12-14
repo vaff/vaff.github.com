@@ -1,37 +1,48 @@
 /* Table of Contents
 
-:: Typography
-:: Foundation settings
+:: normalize.css
+:: susy
 
 */
 
-// The base font size.
-$base-font-size: 16px !default; // Overrides default set in Vertical Rhythm partial.
-$base-line-height: 24px; // Overrides default set in Vertical Rhythm partial.
 
-// The font sizes for h1-h6. You should set these variables in your base partial.
-$h1-font-size: 2    * $base-font-size !default;
-$h2-font-size: 1.5  * $base-font-size !default;
-$h3-font-size: 1.17 * $base-font-size !default;
-$h4-font-size: 1    * $base-font-size !default;
-$h5-font-size: 0.83 * $base-font-size !default;
-$h6-font-size: 0.75 * $base-font-size !default;
+/* : normalize.css :::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-// The default font family. You should set $base-font-family in your base partial.
-$base-font-family: sans-serif !default;
+  // The base font size.
+  $base-font-size: 16px; // Overrides default set in Vertical Rhythm partial.
+  $base-line-height: 24px; // Overrides default set in Vertical Rhythm partial.
 
-// The amount lists and blockquotes are indented.
-$indent-amount: 40px !default;
+  // The font sizes for h1-h6. You should set these variables in your base partial.
+  $h1-font-size: 2    * $base-font-size;
+  $h2-font-size: 1.625  * $base-font-size;
+  $h3-font-size: 1.17 * $base-font-size;
+  $h4-font-size: 1    * $base-font-size;
+  $h5-font-size: 0.83 * $base-font-size;
+  $h6-font-size: 0.75 * $base-font-size;
 
-// After the default variables are set, import the required Compass partials.
-@import "compass/support";
-@import "compass/css3/box-sizing";
-@import "compass/typography/vertical_rhythm";
+  $header-font-family: Oswald, sans-serif;
+  $base-font-family: Montserrat, sans-serif;
+  // The amount lists and blockquotes are indented.
+  $indent-amount: 30px;
+
+  // After the default variables are set, import the required Compass partials.
+  @import "compass/support";
+  @import "compass/css3/box-sizing";
+  @import "compass/typography/vertical_rhythm";
 
 
-// Break points
-$break-large: 1440px;
-$break-medium: 1280px;
-$break-small: 768px;
+/* : susy ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-// Design
+  // Break points
+  $break-large: 1440px;
+  $break-medium: 1280px;
+  $break-small: 768px;
+
+
+/* : theme :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+  // colors
+  $theme-base-font-color: #3D3D3D;
+  $theme-header-font-color: #181818;
+  $theme-main-color: #11dcdc;
+  $theme-secondary-color: #bad;

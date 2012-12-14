@@ -1,0 +1,52 @@
+/* Table of Contents
+
+:: Blockquotes
+:: Code
+
+*/
+
+
+
+/* : Blockquotes :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  blockquote {
+    display: inline-block;
+    padding-left: 18px;
+    padding-bottom: 0;
+    font-size: 15px;
+    line-height: 25px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: 10px solid $theme-main-color;
+
+    p {
+      max-width: 440px;
+    }
+  }
+
+
+/* : Code ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  pre, code {
+      font-family: "Ubuntu-Mono", monospace;
+      font-size: 14px;
+      margin-left: 50px;
+      background-color: #fdfdfd;
+  }
+      code {
+          margin: 0;
+          border: 1px solid #d2d2d2;
+          padding: 2px;
+          -webkit-border-radius: 5px; /* Safari 3-4, iOS 1-3.2, Android ≤1.6 */
+                  border-radius: 5px; /* Opera 10.5, IE9, Safari 5, Chrome, Firefox 4+, iOS 4, Android 2.1+ */
+             -moz-background-clip: padding;
+          -webkit-background-clip: padding-box;
+                  background-clip: padding-box;
+      }
+
+  .codehilite {
+      background-color: #fdfdfd !important;
+      margin-left: -50px !important;
+      padding: 10px 0 !important;
+      border-top: 1px solid #d2d2d2 !important;
+      border-bottom: 1px solid #d2d2d2 !important;
+  }
