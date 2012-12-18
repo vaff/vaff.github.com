@@ -1,71 +1,19 @@
 /* the humans responsible & colophon */
 /* humanstxt.org */
 
-
 /* TEAM */
-  Webdeveloper & Multimediadesigner: Dan Kjær Jessen
+  Webdeveloper: Dan Kjær Jessen
   Site: http://danjessen.dk
   Twitter: @danjessen.dk
   Location: Denmark
 
-/* THANKS */
-  People:
-    Mom & dad
-    Jannie BM: Wife
-    Other friends and family
-
-  Companies:
-    Infoserv          @ http://infoserv.dk
-    Aviva             @ http://aviva.dk  
-
 /* SITE */
-  Last update: 2011/06/04
   Language: English / Danish
   Standards: HTML5, CSS3
-  Tools: 
-    Adobe PhotoShop
-    Adobe Illustrator
-		Coda
-    Sublime Text 2
-    Transmit
-    Git
-    Git Tower
-  Software:
-  	Jekyll						@ http://jekyllrb.com/
-    320 and up        @ http://stuffandnonsense.co.uk/projects/320andup/
-    DOMAssistant      @ http://www.domassistant.com/
+  Tools:
+    Jekyll            @ http://jekyllrb.com/
     Github            @ http://github.com/
-    HTML5Boilerplate  @ http://html5boilerplate.com/
-    jQuery            @ http://jquery.com/
-    jQuery UI         @ http://jqueryui.com/
-    Modernizr         @ http://modernizr.com/
-    RequireJS         @ http://requirejs.org/
-    Respond           @ http://github.com/scottjehl/Respond/
-    Selectivizr       @ http://selectivizr.com/
-    YepNope           @ http://yepnopejs.com/
-  
-
-                                    
-                               -o/-                       
-                               +oo//-                     
-                              :ooo+//:                    
-                             -ooooo///-                   
-                             /oooooo//:                   
-                            :ooooooo+//-                  
-                           -+oooooooo///-                 
-           -://////////////+oooooooooo++////////////::    
-            :+ooooooooooooooooooooooooooooooooooooo+:::-  
-              -/+ooooooooooooooooooooooooooooooo+/::////:-
-                -:+oooooooooooooooooooooooooooo/::///////:-
-                  --/+ooooooooooooooooooooo+::://////:-   
-                     -:+ooooooooooooooooo+:://////:--     
-                       /ooooooooooooooooo+//////:-        
-                      -ooooooooooooooooooo////-           
-                      /ooooooooo+oooooooooo//:            
-                     :ooooooo+/::/+oooooooo+//-           
-                    -oooooo/::///////+oooooo///-          
-                    /ooo+::://////:---:/+oooo//:          
-                   -o+/::///////:-      -:/+o+//-         
-                   :-:///////:-            -:/://         
-                     -////:-                 --//:        
-                       --                       -:        
+    Sass              @ http://sass-lang.com/
+    Compass           @ http://compass-style.org/
+    Susy              @ http://susy.oddbird.net/
+    Normalize         @ http://necolas.github.com/normalize.css/

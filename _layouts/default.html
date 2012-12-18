@@ -1,9 +1,47 @@
 {% include html/top.html %}
 {% include header.html %}
-<header id="header">
-  <h1>{{ page.title }}</h1>
-  <p>{{ page.description}}</p>
-</header><!-- /header -->
-{{ content }}
+<article>
+  <header id="header">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description}}</p>
+  </header><!-- /header -->
+  <div class="wrapper">
+    <div id="post">
+      {{ content }}
+    </div>
+    <footer>
+      <dl id="post-meta">
+      <div id="archive">
+        <dt>↩ Archive</dt>
+        <dd><a href="/" title="Back to the archive">More posts</a></dd>
+      </div>
+      <div id="next-post">
+        {% if page.previous == null %}
+          <dt>Next post →</dt>
+          {% for post in site.categories.blog reversed limit:1 %}
+            <dd><a rel="next" href="{{ post.url }}" title="View {{ post.title }}">{{ post.title }}</a></dd>
+          {% endfor %}
+        {% endif %}
+
+        {% if page.previous %}
+          <dt>Next post →</dt>
+          <dd><a rel="next" href="{{ page.previous.url }}" title="View {{ page.previous.title }}">{{ page.previous.title }}</a></dd>
+        {% endif %}
+
+      </div>
+      <div id="readingtime">
+        <dt>Reading time</dt>
+        <dd>{{ page.reading }}</dd>
+      </div>
+      <div id="published">
+        <dt>Published on</dt>
+        <dd><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time></dd>
+      </div>
+      </dl>
+    </footer>
+  </div>
+
+</article>
+
 {% include footer.html %}
 {% include html/bottom.html %}

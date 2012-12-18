@@ -54,6 +54,16 @@
   }
 
 
+/* : hr ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+  hr {
+    height: em(10px);
+    margin: em(20px) 0;
+    border: 0;
+    background: #FBFBFB;
+    clear: both;
+  }
+
+
 /* : Smoother page load ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
   .wf-loading h1,
   .wf-loading h2,

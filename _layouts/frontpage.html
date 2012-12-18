@@ -3,8 +3,8 @@
 {{ content }}
 
 <ul class="posts">
-{% for post in paginator.posts %}
-  <li><p>{{ post.date | date_to_string }}</p><h1>{{ post.title }}</h1><p>{{ post.description }}</p></li>
+{% for post in site.categories.blog %}
+  <li><a href="{{ post.url }}" title=""><p>{{ post.date | date_to_string }}</p><h1>{{ post.title }}</h1><p>{{ post.description }}</p></a></li>
 {% endfor %}
 </ul>
 

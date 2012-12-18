@@ -1,7 +1,7 @@
 ---
 title: Hello World
 description: A sample kitchen sink page
-date: 2012-12-16 12:00:00 +1000
+date: 2012-12-13 12:00:00 +1000
 categories: [blog]
 reading: 30 seconds
 css: hello-world

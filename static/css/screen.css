@@ -345,14 +345,18 @@ code { margin: 0; border: 0.125em solid #d2d2d2; padding: 0.250em; -webkit-borde
 /* line 48, ../sass/commen/_base.scss */
 .highlight { background-color: #fdfdfd; margin-left: -3.125em; padding: 1.25em  0; border-top: 0.125em solid #d2d2d2; border-bottom: 0.125em solid #d2d2d2; }
 
+/* : hr ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* line 58, ../sass/commen/_base.scss */
+hr { height: 0.625em; margin: 1.25em 0; border: 0; background: #FBFBFB; clear: both; }
+
 /* : Smoother page load ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/* line 62, ../sass/commen/_base.scss */
+/* line 72, ../sass/commen/_base.scss */
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading p, .wf-loading li { opacity: 0; }
 
-/* line 70, ../sass/commen/_base.scss */
+/* line 80, ../sass/commen/_base.scss */
 .ie.wf-loading h1, .ie.wf-loading h2, .ie.wf-loading h3, .ie.wf-loading p, .ie.wf-loading li { visibility: hidden; /* Old IE */ }
 
-/* line 74, ../sass/commen/_base.scss */
+/* line 84, ../sass/commen/_base.scss */
 h1, h2, h3, p, li { opacity: 1; visibility: visible; /* Old IE */ -webkit-transition: opacity 0.24s ease-in-out; -moz-transition: opacity 0.24s ease-in-out; transition: opacity 0.24s ease-in-out; }
 
 /* : typography ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
@@ -373,16 +377,20 @@ a:active { border-color: #bbaadd; }
 b, strong { font-weight: 700; color: black; }
 
 /* line 2, ../sass/components/_header.scss */
-.intro { width: 17.5em; margin: 1.25em auto; }
+#page-header { width: 17.5em; margin: 1.25em auto; }
 /* line 6, ../sass/components/_header.scss */
-.intro img { float: left; margin-right: 1.25em; border-radius: 0.1875em; border-radius: 0.1875em; -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15); box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15); }
+#page-header figure { float: left; margin-right: 0.625em; }
+/* line 11, ../sass/components/_header.scss */
+.wf-loading #page-header img { -webkit-box-shadow: 0 2px 0 #fff; box-shadow: 0 2px 0 0 #fff; }
 /* line 16, ../sass/components/_header.scss */
-.intro h1, .intro p { margin: 0; line-height: 1; color: #3d3d3d; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15); /* text-transform: uppercase; */ }
-/* line 25, ../sass/components/_header.scss */
-.intro h1 { font-size: 1.5em; margin-bottom: 0.3125em; }
+#page-header img { border-radius: 0.1875em; border-radius: 0.1875em; -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15); box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15); }
+/* line 24, ../sass/components/_header.scss */
+#page-header h1, #page-header p { margin: 0; line-height: 1; color: #3d3d3d; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15); /* text-transform: uppercase; */ }
+/* line 33, ../sass/components/_header.scss */
+#page-header h1 { font-size: 1.5em; margin-bottom: 0.3125em; }
 
 /* : post ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/* line 3, ../sass/components/_post.scss */
-header h1 { font-size: 5em; margin: 0; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }
-/* line 9, ../sass/components/_post.scss */
-header p { font-size: 2.5em; margin: 0; margin-bottom: 2em; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }
+/* line 4, ../sass/components/_post.scss */
+#post header h1 { font-size: 5em; margin: 0; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }
+/* line 10, ../sass/components/_post.scss */
+#post header p { font-size: 2.5em; margin: 0; margin-bottom: 2em; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }

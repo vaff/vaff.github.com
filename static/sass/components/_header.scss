@@ -1,15 +1,23 @@
 // : header :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: /
-  .intro {
+  #page-header {
     width: em(280px);
     margin: em(20px) auto;
 
-    img {
+    figure {
       float: left;
-      margin-right: em(20px);
+      margin-right: em(10px);
+    }
+
+    .wf-loading & img {
+      -webkit-box-shadow: 0 2px 0 #fff;
+      box-shadow: 0 2px 0 0 #fff;
+    }
+
+    img {
       border-radius: em(3px);
       border-radius: em(3px);
       -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15);
-      box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15);
+       box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15);
     }
 
     h1,
