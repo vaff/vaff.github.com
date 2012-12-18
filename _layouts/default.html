@@ -1,7 +1,7 @@
 {% include html/top.html %}
 {% include header.html %}
 <article>
-  <header id="header">
+  <header id="post-header">
     <h1>{{ page.title }}</h1>
     <p>{{ page.description}}</p>
   </header><!-- /header -->
@@ -13,7 +13,7 @@
       <dl id="post-meta">
       <div id="archive">
         <dt>↩ Archive</dt>
-        <dd><a href="/" title="Back to the archive">More posts</a></dd>
+        <dd><a href="/blog" title="Back to the archive">More posts</a></dd>
       </div>
       <div id="next-post">
         {% if page.previous == null %}

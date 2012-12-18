@@ -4,7 +4,7 @@ description: Blog of Dan Kjær Jessen - Front-End Mercenary and allround nice gu
 image: http://graph.facebook.com/danjessen/picture
 dropbox: https://dl.dropbox.com/u/2060820/vaff/
 
-permalink: /:title/
+permalink: /:categories/:title/
 paginate: 3 //the number of post per page
 future: false
 auto: true
