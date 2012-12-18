@@ -1,8 +1,11 @@
 ---
 title: Hello World
-layout: default
+description: A sample kitchen sink page
+date: 2012-12-16 12:00:00 +1000
 categories: [blog]
 reading: 30 seconds
+css: hello-world
+layout: default
 ---
 
 Hello World, from a page!  

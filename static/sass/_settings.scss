@@ -13,17 +13,17 @@
   $base-line-height: 24px; // Overrides default set in Vertical Rhythm partial.
 
   // The font sizes for h1-h6. You should set these variables in your base partial.
-  $h1-font-size: 2    * $base-font-size;
-  $h2-font-size: 1.625  * $base-font-size;
-  $h3-font-size: 1.17 * $base-font-size;
-  $h4-font-size: 1    * $base-font-size;
-  $h5-font-size: 0.83 * $base-font-size;
-  $h6-font-size: 0.75 * $base-font-size;
+  $h1-font-size: 2     * $base-font-size;
+  $h2-font-size: 1.625 * $base-font-size;
+  $h3-font-size: 1.17  * $base-font-size;
+  $h4-font-size: 1     * $base-font-size;
+  $h5-font-size: 0.83  * $base-font-size;
+  $h6-font-size: 0.75  * $base-font-size;
 
-  $header-font-family: Oswald, sans-serif;
-  $base-font-family: Montserrat, sans-serif;
+  $header-font-family: "Open sans", sans-serif;
+  $base-font-family: "Pt Sans", sans-serif;
   // The amount lists and blockquotes are indented.
-  $indent-amount: 30px;
+  $indent-amount: 1.875em;
 
   // After the default variables are set, import the required Compass partials.
   @import "compass/support";
@@ -41,8 +41,14 @@
 
 /* : theme :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 
-  // colors
+  // theme colors
+  $theme-main-color: #11dcdc;
+  $theme-main-color-opacity: rgba(17, 220, 220, 0.21);
+  $theme-secondary-color: #bad;
+
+  // font colors
   $theme-base-font-color: #3D3D3D;
   $theme-header-font-color: #181818;
-  $theme-main-color: #11dcdc;
-  $theme-secondary-color: #bad;
+  $theme-header-font-color: $theme-base-font-color;
+  $theme-link-color: #aaa;
+  $theme-font-highlight-color: #000;

@@ -1,44 +1,30 @@
 /* : typography ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: $header-font-family;
-    font-weight: normal;
-    color: $theme-header-font-color;
-  }
 
-  body {
+  body, h1, h2, h3, pre {
     font-family: $base-font-family;
     color: $theme-base-font-color;
   }
 
+  #header h1 {
+    font-family: $header-font-family;
+    font-weight: 800;
+    color: $theme-header-font-color;
+  }
+
   a {
+    color: $theme-font-highlight-color;
     text-decoration: none;
-    color: $theme-main-color;
     border-bottom: 0.125em solid $theme-main-color;
-    &:hover { text-decoration: none; }
+    &:hover {
+      color: $theme-link-color;
+    }
+    &:active {
+      border-color: $theme-secondary-color;
+    }
   }
 
-
-/* : Smoother page load ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-  .wf-loading h1,
-  .wf-loading h2,
-  .wf-loading h3,
-  .wf-loading p,
-  .wf-loading li {
-    opacity: 0;
+  b, strong {
+    font-weight: 700;
+    color: $theme-font-highlight-color;
   }
 
-  .ie.wf-loading h1,
-  .ie.wf-loading h2,
-  .ie.wf-loading h3,
-  .ie.wf-loading p,
-  .ie.wf-loading li {
-    visibility: hidden; /* Old IE */
-  }
-
-  h1, h2, h3, p, li {
-    opacity: 1;
-    visibility: visible; /* Old IE */
-    -webkit-transition: opacity 0.24s ease-in-out;
-       -moz-transition: opacity 0.24s ease-in-out;
-            transition: opacity 0.24s ease-in-out;
-  }

@@ -1,5 +1,9 @@
-{% include html_header.html %}
+{% include html/top.html %}
 {% include header.html %}
+<header id="header">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.description}}</p>
+</header><!-- /header -->
 {{ content }}
 {% include footer.html %}
-{% include html_footer.html %}
+{% include html/bottom.html %}

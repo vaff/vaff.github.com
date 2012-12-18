@@ -1,10 +1,11 @@
 // compass specific imports
 @import "compass";
 
-// theme settings 
+// theme settings
 @import "settings";
 @import "vendor/all";
 @import "mixins/all";
+@import "functions/all";
 @import "commen/all";
 @import "components/all";
 
