@@ -22,6 +22,7 @@
 
   $header-font-family: "Open sans", sans-serif;
   $base-font-family: "Pt Sans", sans-serif;
+  $code-font-family: "Ubuntu Mono", monospace;
   // The amount lists and blockquotes are indented.
   $indent-amount: 1.875em;
 
@@ -47,8 +48,7 @@
   $theme-secondary-color: #bad;
 
   // font colors
-  $theme-base-font-color: #3D3D3D;
-  $theme-header-font-color: #181818;
-  $theme-header-font-color: $theme-base-font-color;
+  $theme-base-font-color: #444;
+  $theme-header-font-color: #222;
   $theme-link-color: #aaa;
   $theme-font-highlight-color: #000;

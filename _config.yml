@@ -10,4 +10,4 @@ future: false
 auto: true
 server: true
 
-exclude: ["README.md", "config.rb"]
+exclude: ["README.md", "config.rb", "static/sass/vendor/normalize"]

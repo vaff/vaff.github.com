@@ -361,19 +361,25 @@ h1, h2, h3, p, li { opacity: 1; visibility: visible; /* Old IE */ -webkit-transi
 
 /* : typography ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* line 3, ../sass/commen/_typography.scss */
-body, h1, h2, h3, pre { font-family: "Pt Sans", sans-serif; color: #3d3d3d; }
+body, h1, h2, h3, pre { font-family: "Pt Sans", sans-serif; color: #444444; }
 
 /* line 8, ../sass/commen/_typography.scss */
-#post-header h1 { font-family: "Open sans", sans-serif; font-weight: 800; color: #3d3d3d; }
+pre, code { font-family: "Ubuntu Mono", monospace; }
 
-/* line 14, ../sass/commen/_typography.scss */
+/* line 12, ../sass/commen/_typography.scss */
+h1, h2, h3, h4 { color: #222222; }
+
+/* line 16, ../sass/commen/_typography.scss */
+#post-header h1 { font-family: "Open sans", sans-serif; font-weight: 800; color: #222222; }
+
+/* line 22, ../sass/commen/_typography.scss */
 a { color: black; text-decoration: none; border-bottom: 0.125em solid #11dcdc; }
-/* line 18, ../sass/commen/_typography.scss */
+/* line 26, ../sass/commen/_typography.scss */
 a:hover { color: #aaaaaa; }
-/* line 21, ../sass/commen/_typography.scss */
+/* line 29, ../sass/commen/_typography.scss */
 a:active { border-color: #bbaadd; }
 
-/* line 26, ../sass/commen/_typography.scss */
+/* line 34, ../sass/commen/_typography.scss */
 b, strong { font-weight: 700; color: black; }
 
 /* line 2, ../sass/components/_header.scss */
@@ -385,7 +391,7 @@ b, strong { font-weight: 700; color: black; }
 /* line 16, ../sass/components/_header.scss */
 #page-header img { border-radius: 0.1875em; border-radius: 0.1875em; -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15); box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15); }
 /* line 24, ../sass/components/_header.scss */
-#page-header h1, #page-header p { margin: 0; line-height: 1; color: #3d3d3d; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15); /* text-transform: uppercase; */ }
+#page-header h1, #page-header p { margin: 0; line-height: 1; color: #222222; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15); /* text-transform: uppercase; */ }
 /* line 33, ../sass/components/_header.scss */
 #page-header h1 { font-size: 1.5em; margin-bottom: 0.3125em; }
 
