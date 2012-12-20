@@ -1,0 +1,10 @@
+{% include html/top.html %}
+{% include header.html %}
+<ul class="posts">
+  {% for post in site.categories.blog limit:page.limit %}
+  <li><a href="{{ post.url }}" title=""><p>{{ post.date | date_to_string }}</p><h1>{{ post.title }}</h1><p>{{ post.description }}</p></a></li>
+  {% endfor %}
+</ul>
+{{ content }}
+{% include footer.html %}
+{% include html/bottom.html %}
