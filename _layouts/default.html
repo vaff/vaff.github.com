@@ -6,39 +6,40 @@
     <p>{{ page.description}}</p>
   </header><!-- /header -->
   <div class="wrapper">
-    <div id="post">
+    <div id="post" roll="content">
       {{ content }}
     </div>
-    <footer>
-      <dl id="post-meta">
-      <div id="archive">
-        <dt>↩ Archive</dt>
-        <dd><a href="/blog" title="Back to the archive">More posts</a></dd>
-      </div>
-      <div id="next-post">
-        {% if page.previous == null %}
-          <dt>Next post →</dt>
-          {% for post in site.categories.blog reversed limit:1 %}
-            <dd><a rel="next" href="{{ post.url }}" title="View {{ post.title }}">{{ post.title }}</a></dd>
-          {% endfor %}
-        {% endif %}
 
-        {% if page.previous %}
-          <dt>Next post →</dt>
-          <dd><a rel="next" href="{{ page.previous.url }}" title="View {{ page.previous.title }}">{{ page.previous.title }}</a></dd>
-        {% endif %}
+    {% if page.categories contains 'blog' %}
+      <footer>
+        <dl id="post-meta">
+        <div id="archive">
+          <dt>&#x21A9; Archive</dt>
+          <dd><a href="/blog" title="Back to the archive">More posts</a></dd>
+        </div>
+        <div id="next-post">
+            <dt>Next post &rarr;</dt>
+            {% if page.previous == null %}
+              {% for post in site.categories.blog reversed limit:1 %}
+                <dd><a rel="next" href="{{ post.url }}" title="View {{ post.title }}">{{ post.title }}</a></dd>
+              {% endfor %}
+            {% endif %}
 
-      </div>
-      <div id="readingtime">
-        <dt>Reading time</dt>
-        <dd>{{ page.reading }}</dd>
-      </div>
-      <div id="published">
-        <dt>Published on</dt>
-        <dd><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time></dd>
-      </div>
-      </dl>
-    </footer>
+            {% if page.previous %}
+              <dd><a rel="next" href="{{ page.previous.url }}" title="View {{ page.previous.title }}">{{ page.previous.title }}</a></dd>
+            {% endif %}
+        </div>
+        <div id="readingtime">
+          <dt>Reading time</dt>
+          <dd>{{ page.reading }}</dd>
+        </div>
+        <div id="published">
+          <dt>Published on</dt>
+          <dd><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_string }}</time></dd>
+        </div>
+        </dl>
+      </footer>
+    {% endif %}
   </div>
 
 </article>
