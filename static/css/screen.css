@@ -382,20 +382,34 @@ a:active { border-color: #bbaadd; }
 /* line 34, ../sass/commen/_typography.scss */
 b, strong { font-weight: 700; color: black; }
 
+/* : helpers :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* line 2, ../sass/components/_header.scss */
-#page-header { width: 17.5em; margin: 1.25em auto; }
-/* line 6, ../sass/components/_header.scss */
+#page-header { overflow: hidden; *zoom: 1; width: 37.5em; margin: 1.25em auto; }
+/* line 7, ../sass/components/_header.scss */
 #page-header figure { float: left; margin-right: 0.625em; }
-/* line 11, ../sass/components/_header.scss */
-.wf-loading #page-header img { -webkit-box-shadow: 0 2px 0 #fff; box-shadow: 0 2px 0 0 #fff; }
-/* line 16, ../sass/components/_header.scss */
+/* line 12, ../sass/components/_header.scss */
 #page-header img { border-radius: 0.1875em; border-radius: 0.1875em; -webkit-box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15); box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.15); }
-/* line 24, ../sass/components/_header.scss */
-#page-header h1, #page-header p { margin: 0; line-height: 1; color: #222222; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15); /* text-transform: uppercase; */ }
-/* line 33, ../sass/components/_header.scss */
+/* line 18, ../sass/components/_header.scss */
+.wf-loading #page-header img { -webkit-box-shadow: 0 2px 0 #fff; box-shadow: 0 2px 0 0 #fff; }
+/* line 25, ../sass/components/_header.scss */
+#page-header h1, #page-header p { margin: 0; line-height: 1; color: #222222; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.15); }
+/* line 32, ../sass/components/_header.scss */
 #page-header h1 { font-size: 1.5em; margin-bottom: 0.3125em; }
+/* line 37, ../sass/components/_header.scss */
+#page-header .logo { float: left; width: 18.75em; border-bottom: 0; margin-top: 1.25em; }
 
 /* : menu ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* line 2, ../sass/components/_menu.scss */
+#menu { overflow: hidden; *zoom: 1; float: right; width: 18.75em; }
+/* line 7, ../sass/components/_menu.scss */
+#menu span { display: block; text-align: center; }
+/* line 12, ../sass/components/_menu.scss */
+#menu ul { overflow: hidden; *zoom: 1; }
+/* line 16, ../sass/components/_menu.scss */
+#menu li { list-style: none; float: left; width: 33.3333%; }
+/* line 22, ../sass/components/_menu.scss */
+#menu a { display: block; border-bottom: none; }
+
 /* : post ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* line 4, ../sass/components/_post.scss */
 #post header h1 { font-size: 5em; margin: 0; text-shadow: 0 2px 0 rgba(0, 0, 0, 0.1); }
