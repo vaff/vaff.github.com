@@ -37,6 +37,9 @@
       code {
         margin: 0;
         padding: 0.250em;
+           -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+                background-clip: padding-box;
       }
 
   .highlight {
