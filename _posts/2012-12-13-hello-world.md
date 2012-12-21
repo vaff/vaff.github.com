@@ -22,15 +22,15 @@ Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean comm
 
 **Hvad med noget kode?**
 
-{% highlight javascript linenos %}
+{% highlight javascript %}
 $(function () {
     var $nav = $('#main');
     $nav.animate({left: '0'}, 500, function () {
         $nav.find('ul li')
-        .delay(500)
-        .each(function(index) {
-            $(this).delay(200*index).fadeIn(200);
-        });
+            .delay(500)
+            .each(function(index) {
+                $(this).delay(200*index).fadeIn(200);
+            });
     });
 });
 {% endhighlight %}
