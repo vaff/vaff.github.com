@@ -340,23 +340,23 @@ blockquote p { max-width: 80%; margin-left: auto; margin-right: auto; }
 pre, code { font-family: "Ubuntu-Mono", monospace; font-size: 0.875em; margin-left: 3.125em; background-color: #fdfdfd; }
 
 /* line 37, ../sass/commen/_base.scss */
-code { margin: 0; border: 0.125em solid #d2d2d2; padding: 0.250em; -webkit-border-radius: 0.3125em; border-radius: 0.3125em; -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box; }
+code { margin: 0; padding: 0.250em; }
 
-/* line 48, ../sass/commen/_base.scss */
+/* line 42, ../sass/commen/_base.scss */
 .highlight { background-color: #fdfdfd; margin-left: -3.125em; padding: 1.25em  0; border-top: 0.125em solid #d2d2d2; border-bottom: 0.125em solid #d2d2d2; }
 
 /* : hr ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/* line 58, ../sass/commen/_base.scss */
+/* line 52, ../sass/commen/_base.scss */
 hr { height: 0.625em; margin: 1.25em 0; border: 0; background: #FBFBFB; clear: both; }
 
 /* : Smoother page load ::::::::::::::::::::::::::::::::::::::::::::::::::::: */
-/* line 72, ../sass/commen/_base.scss */
+/* line 66, ../sass/commen/_base.scss */
 .wf-loading h1, .wf-loading h2, .wf-loading h3, .wf-loading p, .wf-loading li { opacity: 0; }
 
-/* line 80, ../sass/commen/_base.scss */
+/* line 74, ../sass/commen/_base.scss */
 .ie.wf-loading h1, .ie.wf-loading h2, .ie.wf-loading h3, .ie.wf-loading p, .ie.wf-loading li { visibility: hidden; /* Old IE */ }
 
-/* line 84, ../sass/commen/_base.scss */
+/* line 78, ../sass/commen/_base.scss */
 h1, h2, h3, p, li { opacity: 1; visibility: visible; /* Old IE */ -webkit-transition: opacity 0.24s ease-in-out; -moz-transition: opacity 0.24s ease-in-out; transition: opacity 0.24s ease-in-out; }
 
 /* : typography ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
