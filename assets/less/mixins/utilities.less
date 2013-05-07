@@ -1,0 +1,42 @@
+//
+// Mixins
+// --------------------------------------------------
+
+
+//
+// Utility Mixins
+// --------------------------------------------------
+
+
+// Clearfix
+// --------
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// box-shadow
+// ----------
+.box-shadow (@x: 0; @y: 0; @blur: 1px; @spread: 1px; @color: #000) {
+  -webkit-box-shadow: @arguments;
+  -moz-box-shadow: @arguments;
+  box-shadow: @arguments;
+}
+
+
+// box-sizing
+// ----------
+.box-sizing {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
