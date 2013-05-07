@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="no-js ie6 wf-loading" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7 wf-loading" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8 wf-loading" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="no-js ie9 wf-loading" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js wf-loading" lang="en"> <!--<![endif]-->
+ <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>danjessen &middot; Hello debugger, how you doin' (1)</title>
+
+  <!-- normal meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A simple debugging post">
+  <meta name="author" content="danjessen">
+
+  <!-- facebook meta -->
+  <meta property="og:title" content="danjessen &middot; Hello debugger, how you doin' (1)">
+  <meta property="og:description" content="A simple debugging post">
+  <meta property="og:image" content="http://graph.facebook.com/danjessen/picture">
+
+  <!-- dns cacheing -->
+  <link href="//ajax.googleapis.com" rel="dns-prefetch">
+  <link href="//fonts.googleapis.com" rel="dns-prefetch">
+  <link href="//html5shiv.googlecode.com" rel="dns-prefetch">
+  <link href="//cdn.danjessen.dk" rel="dns-prefetch">
+  <link href="//dl.dropbox.com/" rel="dns-prefetch">
+
+  <!-- rss feeds -->
+  <link href="atom.xml" type="application/atom+xml" rel="alternate" title="danjessen.dk — blog — ATOM Feed">
+  <link href="rss.xml" type="application/rss+xml" rel="alternate" title="danjessen.dk — blog — RSS Fee" >
+
+  <!-- google fonts -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Allerta' rel='stylesheet' type='text/css'>-->
+
+<script type="text/javascript">
+  WebFontConfig = {
+    google: { families: [ 'Ubuntu+Mono:400,700,400italic,700italic:latin', 'PT+Sans:400,700,400italic,700italic:latin', 'Allerta::latin', 'Open+Sans:800:latin' ] }
+  };
+  (function() {
+    var wf = document.createElement('script');
+    wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+      '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+    wf.type = 'text/javascript';
+    wf.async = 'true';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(wf, s);
+  })(); </script>
+
+
+  <!-- css -->
+  <link href="/static/css/screen.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+<body id="default" class="hello-world1">
+
+<header id="page-header">
+  <div class="wrapper">
+    <a href="/" class="logo">
+      <div>
+        <figure class="portrait"><img src="http://graph.facebook.com/danjessen/picture" width="50px" height="50px" alt="dan kjær jessen"></figure>
+        <h1 class="name">dan kjær jessen</h1>
+        <p class="title">frontend developer</p>
+      </div>
+    </a>
+        <nav roll="navigation" id="menu">
+      <ul>
+        <li><a href="/blog" title="danjessen"><span class="icon">&#x270E;</span><span>Blog</span></a></li>
+        <li><a href="/projects" title="Current and old projects"><span class="icon">&#x2702;</span><span>Projects</span></a></li>
+        <li><a href="/about" title="Blog of Dan Kjær Jessen - Front-End Mercenary and allround nice guy"><span class="icon">?</span><span>About</span></a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+
+
+<article>
+  <header id="post-header">
+    <h1>Hello debugger, how you doin' (1)</h1>
+    <p>A simple debugging post</p>
+  </header><!-- /header -->
+  <div class="wrapper">
+    <div id="post" roll="content">
+      <p>Hello World, from a page!<br />Hello World, from another line!</p>
+
+<p>Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim</p>
+
+<h1 id='en_h1er'>En H1&#8217;er</h1>
+
+<h2 id='en_h2er'>En H2&#8217;er</h2>
+
+<h3 id='en_h3er'>En H3&#8217;er</h3>
+
+<p><strong>Vi prøver lige en blockquote</strong></p>
+
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+</blockquote>
+    </div>
+
+    
+      <footer>
+        <dl id="post-meta">
+        <div id="archive">
+          <dt>&#x21A9; Archive</dt>
+          <dd><a href="/blog" title="Back to the archive">More posts</a></dd>
+        </div>
+        <div id="next-post">
+            <dt>Next post &rarr;</dt>
+            
+              
+                <dd><a rel="next" href="/blog/hello-world/" title="View Hello World">Hello World</a></dd>
+              
+            
+
+            
+        </div>
+        <div id="readingtime">
+          <dt>Reading time</dt>
+          <dd>10 seconds</dd>
+        </div>
+        <div id="published">
+          <dt>Published on</dt>
+          <dd><time datetime="2012-12-11T03:00:00+01:00">11 Dec 2012</time></dd>
+        </div>
+        </dl>
+      </footer>
+    
+  </div>
+
+</article>
+
+
+  <script>
+//<![CDATA[
+  var _gaq=[['_setAccount','UA-23678410-1'],['_trackPageview'],['_trackPageLoadTime'],['_setDomainName', '.danjessen.dk']];
+  (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+  g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+  s.parentNode.insertBefore(g,s)}(document,'script'));
+//]]>
+</script>
+
+</body>
+</html>
+

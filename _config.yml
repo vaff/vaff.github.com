@@ -1,8 +1,8 @@
 url: http://danjessen.dk
 title: danjessen
-description: Blog of Dan Kjær Jessen - Front-End Mercenary and allround nice guy
+description: Site of Dan Kjær Jessen
 image: http://graph.facebook.com/danjessen/picture
-dropbox: https://dl.dropbox.com/u/2060820/vaff/
+dropbox: https://dl.dropbox.com/u/2060820/jekyll/danjessen
 
 permalink: /:categories/:title/
 paginate: 3 //the number of post per page
@@ -10,4 +10,4 @@ future: false
 auto: true
 server: true
 
-exclude: ["README.md", "config.rb", "static/sass/vendor/normalize"]
+exclude: ["README.md"]

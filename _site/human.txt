@@ -1,0 +1,19 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+  Webdeveloper: Dan Kjær Jessen
+  Site: http://danjessen.dk
+  Twitter: @danjessen.dk
+  Location: Denmark
+
+/* SITE */
+  Language: English / Danish
+  Standards: HTML5, CSS3
+  Tools:
+    Jekyll            @ http://jekyllrb.com/
+    Github            @ http://github.com/
+    Sass              @ http://sass-lang.com/
+    Compass           @ http://compass-style.org/
+    Susy              @ http://susy.oddbird.net/
+    Normalize         @ http://necolas.github.com/normalize.css/
