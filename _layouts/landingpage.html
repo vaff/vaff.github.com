@@ -1,4 +1,4 @@
-{% include html/top.html %}
+{% include top.html %}
 {% include header.html %}
 <ul class="posts">
   {% for post in site.categories.blog limit:page.limit %}
@@ -7,4 +7,4 @@
 </ul>
 {{ content }}
 {% include footer.html %}
-{% include html/bottom.html %}
+{% include bottom.html %}
