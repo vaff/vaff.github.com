@@ -1,84 +1,30 @@
-.clearfix {
-  *zoom: 1;
+@font-face {
+  font-family: 'entypo';
+  src: url('../fonts/entypo.eot');
+  src: url('../fonts/entypo.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../fonts/entypo.woff') format('woff'), /* Modern Browsers */
+   url('../fonts/entypo.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../fonts/entypo.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;/* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-.clearfix:before,
-.clearfix:after {
-  display: table;
-  content: "";
-  line-height: 0;
+@font-face {
+  font-family: 'entypo-social';
+  src: url('../fonts/entypo-social.eot');
+  src: url('../fonts/entypo-social.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+   url('../fonts/entypo-social.woff') format('woff'), /* Modern Browsers */
+   url('../fonts/entypo-social.ttf') format('truetype'), /* Safari, Android, iOS */
+   url('../fonts/entypo-social.svg#svgFontName') format('svg');
+  font-weight: normal;
+  font-style: normal;/* IE9 Compat Modes */
+  /* Legacy iOS */
 }
-.clearfix:after {
-  clear: both;
+.btn {
+  font-family: "entypo";
 }
-.box-sizing {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.wf-loading h1,
-.wf-loading h2,
-.wf-loading h3,
-.wf-loading h4,
-.wf-loading h5,
-.wf-loading h6,
-.wf-loading p,
-.wf-loading li,
-.wf-loading td {
-  opacity: 0;
-}
-.ie.wf-loading h1,
-.ie.wf-loading h2,
-.ie.wf-loading h3,
-.ie.wf-loading h4,
-.ie.wf-loading h5,
-.ie.wf-loading h6,
-.ie.wf-loading p,
-.ie.wf-loading li,
-.ie.wf-loading td {
-  visibility: hidden;
-  /* Old IE */
-
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li,
-td {
-  opacity: 1;
-  visibility: visible;
-  /* Old IE */
-
-  -webkit-transition: opacity 0.24s ease-in-out;
-  -moz-transition: opacity 0.24s ease-in-out;
-  transition: opacity 0.24s ease-in-out;
-}
-#sidr-top {
-  top: 0;
-  left: 0;
-  position: absolute;
-  z-index: 999;
-}
-#menu-hook {
-  width: 49px;
-  height: 49px;
-  float: left;
-}
-#menu-hook .btn {
-  display: block;
-  width: 49px;
-  height: 49px;
-  color: #fff;
-  background-color: #000;
-}
-#menu-hook #open {
-  display: none;
-}
-#sidr-top .logo {
-  text-decoration: none;
+.btn-social {
+  font-family: "entypo-social";
 }
 /*
  * Gridism
@@ -195,6 +141,14 @@ td {
   display: table;
   content: "";
   line-height: 0;
+}
+.grid:after {
+  clear: both;
+}
+.grid:before,
+.grid:after {
+  content: " ";
+  display: table;
 }
 .grid:after {
   clear: both;
@@ -792,13 +746,136 @@ table {
 .highlight .il {
   color: #009999;
 }
-@font-face {
-  font-family: 'entypo';
-  src: url('../fonts/entypo.eot?v=3.0.1');
-  src: url('../fonts/entypo.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('../fonts/entypo.woff?v=3.0.1') format('woff'), url('../fonts/entypo.ttf?v=3.0.1') format('truetype'), url('../fonts/entypo.svg#fontawesomeregular?v=3.0.1') format('svg');
-  src: url('../fonts/entypo.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.inline-block {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+}
+/*!
+ * Preboot v2
+ *
+ * Open sourced under MIT license by @mdo.
+ * Some variables and mixins from Bootstrap (Apache 2 license).
+ */
+.wf-loading h1,
+.wf-loading h2,
+.wf-loading h3,
+.wf-loading h4,
+.wf-loading h5,
+.wf-loading h6,
+.wf-loading a,
+.wf-loading p,
+.wf-loading li,
+.wf-loading td {
+  opacity: 0;
+}
+.ie.wf-loading h1,
+.ie.wf-loading h2,
+.ie.wf-loading h3,
+.ie.wf-loading h4,
+.ie.wf-loading h5,
+.ie.wf-loading h6,
+.ie.wf-loading p,
+.ie.wf-loading li,
+.ie.wf-loading td {
+  visibility: hidden;
+  /* Old IE */
+
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+td,
+a {
+  opacity: 1;
+  visibility: visible;
+  /* Old IE */
+
+  -webkit-transition: opacity 0.24s ease-in-out;
+  -moz-transition: opacity 0.24s ease-in-out;
+  transition: opacity 0.24s ease-in-out;
+}
+#sidr-top {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 999;
+}
+#sidr-top a {
+  text-decoration: none;
+}
+#sidr-top .btn {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  width: 49px;
+  height: 49px;
+  text-align: center;
+  line-height: 49px;
+  font-size: 45px;
+  color: #fff;
+  background-color: #000;
+  -webkit-transition: color, background-color 0.5s ease-out;
+  -moz-transition: color, background-color 0.5s ease-out;
+  -o-transition: color, background-color 0.5s ease-out;
+  transition: color, background-color 0.5s ease-out;
+}
+#sidr-top .btn:hover {
+  color: #2c3e50;
+  background-color: #bdc3c7;
+}
+#sidr-top #open {
+  display: none;
+}
+#sidr-top .logo {
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  height: 49px;
+  line-height: 49px;
+  font-size: 28px;
+  color: #1abc9c;
+  /* @green */
+
+  padding: 0 18px;
+  margin: 0;
+  background-color: #fff;
+}
+#sidr-top .logo:hover {
+  color: #3498db;
+  /* @blue */
+
 }
 h1,
 h2,
@@ -825,7 +902,7 @@ body {
   height: 100%;
 }
 .logo {
-  margin-top: 30px;
+  margin-top: 10%;
   font-family: "Lato";
   font-weight: 300;
   padding: 15px;
