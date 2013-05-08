@@ -11,16 +11,33 @@
   <title>{{ site.title }}{% if page.title %} &middot; {{ page.title }}{% endif %}</title>
 
   <!-- normal meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-  <meta name="author" content="danjessen">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="copyright" content="&copy; Copyright 2008 to Present"/>
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta http-equiv="cleartype" content="on">
 
   <!-- facebook meta -->
   <meta property="og:title" content="{{ site.title }}{% if page.title %} &middot; {{ page.title }}{% endif %}">
   <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:url" content="{{ page.url }}">
   <meta property="og:image" content="{% if page.image %}{{ site.dropbox }}{{ page.image }}{% else %}http://graph.facebook.com/danjessen/picture{% endif %}">
 
+  <!-- twitter meta -->
+  <meta property="twitter:account_id" content="30684566">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@danjessen">
+  <meta name="twitter:creator" content="@danjessen">
+  <meta name="twitter:url" content="{{ page.url }}">
+  <meta name="twitter:title" content="{{ site.title }}{% if page.title %} &middot; {{ page.title }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
   <!-- dns cacheing -->
+  <meta http-equiv="x-dns-prefetch-control" content="off">
   <link href="//ajax.googleapis.com" rel="dns-prefetch">
   <link href="//fonts.googleapis.com" rel="dns-prefetch">
   <link href="//html5shiv.googlecode.com" rel="dns-prefetch">
@@ -31,17 +48,17 @@
   <link href="/feeds/atom.xml" type="application/atom+xml" rel="alternate" title="danjessen.dk — blog — ATOM Feed">
   <link href="/feeds/rss.xml" type="application/rss+xml" rel="alternate" title="danjessen.dk — blog — RSS Fee" >
 
-  <!-- google fonts -->
+  <!-- other -->
+  <link rel="canonical" href="http:danjessen.dk">
+  <link type="text/plain" rel="author" href="/humans.txt" />
+
+  <!-- smooth font loading -->
   <script>
-    WebFontConfig = {
-      google: {
-        families: [
-          'Old+Standard+TT:400,400italic:latin',
-          'Open+Sans:400italic,600italic,400,600:latin',
-          'Lato:300,700,300italic,700italic'
-        ]
-      }
-    };
+    WebFontConfig = { google: { families: [
+      'Old+Standard+TT:400,400italic:latin',
+      'Open+Sans:400italic,600italic,400,600:latin',
+      'Lato:100,300,700,300italic,700italic'
+    ]}};
     (function() {
       var wf = document.createElement('script');
       wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
@@ -53,52 +70,17 @@
     })();
   </script>
 
-  <!-- css -->
-  <link href="/assets/css/style.min.css" rel="stylesheet">
-  <style>
-    h1, h2,h3,h4,h5,h6 { font-family: "Lato", sans-serif; font-weight: 700; text-transform: uppercase; }
-    p, li, td { font-family: "Open Sans", sans-serif; font-weight: 400; }
-    pre { font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace; }
-
-    html,body {
-      background-color: #ecf0f1;
-      height: 100%;
-    }
-
-    .logo {
-      margin-top: 30px;
-      font-family: "Lato";
-      font-weight: 300;
-      padding: 15px;
-      background-color: #1abc9c;
-      color: #fff;
-      text-align: center;
-
-  -webkit-transition: all .5s ease-out;  /* Chrome 1-25, Safari 3.2+ */
-     -moz-transition: all .5s ease-out;  /* Firefox 4-15 */
-       -o-transition: all .5s ease-out;  /* Opera 10.50–12.00 */
-          transition: all .5s ease-out;  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
-    }
-
-    .upper {
-      text-transform: uppercase;
-    }
-
-    .logo .last {
-      font-weight: 700;
-    }
-
-    .logo:hover {
-      background-color: #3498db;
-    }
-
-    .logo .title { visibility: hidden; text-transform: none; }
-    .logo:hover .title { visibility: visible; }
-  </style>
-
   <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
+
+  <!-- styling -->
+  <link rel="stylesheet/less" type="text/css" href="/assets/less/screen.less">
+  <script type="text/javascript">less = { env: "development", dumpLineNumbers: "comments" };</script>
+  <script src="/assets/js/less.min.js"></script>
+  <!--<link href="/assets/css/style.min.css" rel="stylesheet">-->
+
 </head>
 <body id="{{ page.layout }}" class="{{ page.css | downcase | replace: " ", "-" }}">
-<h1 class="logo upper">dan<span class="last">jessen</span> <span class="title">- Frontend developer</span></h1>
+  {% include sidr.html %}
+  <h1 class="logo upper">dan<span class="last">jessen</span> <span class="title">- Frontend developer</span></h1>

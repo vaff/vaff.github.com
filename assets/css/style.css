@@ -56,6 +56,30 @@ td {
   -moz-transition: opacity 0.24s ease-in-out;
   transition: opacity 0.24s ease-in-out;
 }
+#sidr-top {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 999;
+}
+#menu-hook {
+  width: 49px;
+  height: 49px;
+  float: left;
+}
+#menu-hook .btn {
+  display: block;
+  width: 49px;
+  height: 49px;
+  color: #fff;
+  background-color: #000;
+}
+#menu-hook #open {
+  display: none;
+}
+#sidr-top .logo {
+  text-decoration: none;
+}
 /*
  * Gridism
  * A simple, responsive, and handy CSS grid by @cobyism
@@ -767,4 +791,73 @@ table {
 }
 .highlight .il {
   color: #009999;
+}
+@font-face {
+  font-family: 'entypo';
+  src: url('../fonts/entypo.eot?v=3.0.1');
+  src: url('../fonts/entypo.eot?#iefix&v=3.0.1') format('embedded-opentype'), url('../fonts/entypo.woff?v=3.0.1') format('woff'), url('../fonts/entypo.ttf?v=3.0.1') format('truetype'), url('../fonts/entypo.svg#fontawesomeregular?v=3.0.1') format('svg');
+  src: url('../fonts/entypo.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+p,
+li,
+td {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+pre {
+  font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+}
+html,
+body {
+  background-color: #ecf0f1;
+  height: 100%;
+}
+.logo {
+  margin-top: 30px;
+  font-family: "Lato";
+  font-weight: 300;
+  padding: 15px;
+  background-color: #1abc9c;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.5s ease-out;
+  /* Chrome 1-25, Safari 3.2+ */
+
+  -moz-transition: all 0.5s ease-out;
+  /* Firefox 4-15 */
+
+  -o-transition: all 0.5s ease-out;
+  /* Opera 10.50–12.00 */
+
+  transition: all 0.5s ease-out;
+  /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
+
+}
+.upper {
+  text-transform: uppercase;
+}
+.logo .last {
+  font-weight: 700;
+}
+.logo:hover {
+  background-color: #3498db;
+}
+.logo .title {
+  visibility: hidden;
+  text-transform: none;
+}
+.logo:hover .title {
+  visibility: visible;
 }

@@ -1,0 +1,65 @@
+//
+// SIDR
+// --------------------------------------------------
+
+
+// sidr top logo
+// -------------
+#sidr-top {
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 999;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+
+// menu hook
+// ---------
+#sidr-top {
+  .btn {
+    .inline-block;
+    .square(49px);
+    text-align: center;
+    line-height: 49px;
+    font-size: 30px;
+    color: #fff;
+    background-color: #000;
+
+  -webkit-transition: color,background-color 0.5s ease-out;
+     -moz-transition: color,background-color 0.5s ease-out;
+       -o-transition: color,background-color 0.5s ease-out;
+          transition: color,background-color 0.5s ease-out;
+
+    &:hover {
+      color: #2c3e50;
+      background-color: #bdc3c7;
+    }
+  }
+
+  #normal { }
+  #open { display:none; }
+}
+
+
+// logo
+// ----
+#sidr-top {
+  .logo {
+    .inline-block;
+    height: 49px;
+    line-height: 49px;
+    font-size: 28px;
+    color: @green; /* @green */
+    padding: 0 18px;
+    margin: 0;
+    background-color: #fff;
+
+    &:hover {
+      color: #9b59b6; /* @blue */
+    }
+  }
+}

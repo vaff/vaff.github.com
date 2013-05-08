@@ -3,6 +3,7 @@ title: danjessen
 description: Site of Dan Kjær Jessen
 image: http://graph.facebook.com/danjessen/picture
 dropbox: https://dl.dropbox.com/u/2060820/jekyll/danjessen
+author: Dan Kjær Jessen
 
 permalink: /:categories/:title/
 paginate: 3 //the number of post per page

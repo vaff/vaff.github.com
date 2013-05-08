@@ -1,19 +1,17 @@
-/* the humans responsible & colophon */
-/* humanstxt.org */
+# humanstxt.org/
+# The humans responsible & technology colophon
 
-/* TEAM */
-  Webdeveloper: Dan Kjær Jessen
-  Site: http://danjessen.dk
-  Twitter: @danjessen.dk
-  Location: Denmark
+# TEAM
 
-/* SITE */
+    Dan Kjær Jessen -- @danjessen
+
+
+# TECHNOLOGY COLOPHON
   Language: English / Danish
   Standards: HTML5, CSS3
   Tools:
     Jekyll            @ http://jekyllrb.com/
     Github            @ http://github.com/
-    Sass              @ http://sass-lang.com/
-    Compass           @ http://compass-style.org/
-    Susy              @ http://susy.oddbird.net/
+    Less              @ http://lesscss.org/
     Normalize         @ http://necolas.github.com/normalize.css/
+    gridism           @ http://cobyism.com/gridism/
