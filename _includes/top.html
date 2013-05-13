@@ -75,14 +75,15 @@
   <![endif]-->
 
   <!-- styling -->
-  <!--
   <link rel="stylesheet/less" type="text/css" href="/assets/less/screen.less">
   <script type="text/javascript">less = { env: "development", dumpLineNumbers: "comments" };</script>
-  <script src="/assets/js/less.min.js"></script>
-  -->
+  <script src="/assets/scripts/lib/less.min.js"></script>
+  <!--
   <link href="/assets/css/style.min.css" rel="stylesheet">
+  -->
+  <script src="/assets/scripts/require.js" data-main="/assets/scripts/main.js"></script>
 
 </head>
 <body id="{{ page.layout }}" class="{{ page.css | downcase | replace: " ", "-" }}">
   {% include sidr.html %}
-  <h1 class="logo upper">dan<span class="last">jessen</span> <span class="title">- Frontend developer</span></h1>
+  <h1 class="logo upper header">dan<span class="last">jessen</span><br><span class="title">Gamer, Pancake lover. <br>Passionate web developer.</span></h1>

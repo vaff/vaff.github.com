@@ -1,0 +1,54 @@
+//
+// TYPOGRAPTY
+// --------------------------------------------------
+
+// base
+// ----
+html {
+  font-family: @base-font;                        // @base-font
+  font-weight: @base-weight;                      // @base-weight
+}
+
+
+// headings
+// --------
+h1, h2, h3, h4, h5, h6 {
+  font-family: @header-font;                      // @header-font
+  font-weight: @header-weight;                    // @header-weight
+  text-transform: @header-transform;              // @header-transform
+}
+
+
+// code
+// ----
+pre, code {
+  font-family: @code-font;                        // @code-font
+  font-weight: @code-weight;                      // @code-weight
+}
+
+
+// extra
+// -----
+.ornament {
+  font-family: @ornaments-font;                   // @ornaments-font
+  font-weight: @ornaments-font;                   // @ornaments-weight
+}
+
+.logo {
+  font-family: @logo-font;                        // @logo-font
+  font-weight: @logo-weight;                      // @logo-weight
+  line-height: 1;
+
+  big,
+  .last {
+    font-weight: @logo-big-weight;                // @logo-big-weight
+  }
+
+  small,
+  .title {
+    font-weight: @logo-small-weight;              // @logo-small-weight
+    font-size: @logo-small-size;                  // @logo-small-size
+    text-transform: @logo-small-transform;        // @logo-small-transform
+    line-height: 1;
+  }
+}

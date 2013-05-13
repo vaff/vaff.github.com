@@ -848,7 +848,7 @@ a {
   -o-transition: color, background-color 0.5s ease-out;
   transition: color, background-color 0.5s ease-out;
 }
-#sidr-top .btn:hover {
+#sidr-top:hover .btn {
   color: #2c3e50;
   background-color: #bdc3c7;
 }
@@ -872,7 +872,7 @@ a {
   margin: 0;
   background-color: #fff;
 }
-#sidr-top .logo:hover {
+#sidr-top:hover .logo {
   color: #3498db;
   /* @blue */
 
