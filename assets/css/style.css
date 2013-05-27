@@ -875,11 +875,11 @@ code {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  width: 49px;
-  height: 49px;
+  width: 39px;
+  height: 39px;
   text-align: center;
-  line-height: 49px;
-  font-size: 45px;
+  line-height: 39px;
+  font-size: 18px;
   color: #fff;
   background-color: #000;
   -webkit-transition: color, background-color 0.5s ease-out;
@@ -901,9 +901,9 @@ code {
   *vertical-align: auto;
   zoom: 1;
   *display: inline;
-  height: 49px;
-  line-height: 49px;
-  font-size: 28px;
+  height: 39px;
+  line-height: 39px;
+  font-size: 35px;
   color: #1abc9c;
   /* @green */
 
@@ -933,9 +933,9 @@ code {
 }
 #header h1 {
   width: 1280px;
-  margin: 100px auto 0;
+  margin: 114px auto 0;
   background-color: inherit;
-  font-size: 120px;
+  font-size: 100px;
   text-align: right;
 }
 html,
