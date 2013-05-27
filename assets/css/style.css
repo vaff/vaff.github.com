@@ -936,6 +936,7 @@ code {
   margin: 100px auto 0;
   background-color: inherit;
   font-size: 120px;
+  text-align: right;
 }
 html,
 body {
