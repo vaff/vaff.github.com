@@ -879,7 +879,7 @@ code {
   height: 39px;
   text-align: center;
   line-height: 39px;
-  font-size: 18px;
+  font-size: 35px;
   color: #fff;
   background-color: #000;
   -webkit-transition: color, background-color 0.5s ease-out;
@@ -903,7 +903,7 @@ code {
   *display: inline;
   height: 39px;
   line-height: 39px;
-  font-size: 35px;
+  font-size: 18px;
   color: #1abc9c;
   /* @green */
 
