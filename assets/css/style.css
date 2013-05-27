@@ -820,6 +820,45 @@ a {
   -moz-transition: opacity 0.24s ease-in-out;
   transition: opacity 0.24s ease-in-out;
 }
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+pre,
+code {
+  font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+  font-weight: 400;
+}
+.ornament {
+  font-family: Old Standard TT, serif;
+  font-weight: Old Standard TT, serif;
+}
+.logo {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  line-height: 1;
+}
+.logo .big,
+.logo .last {
+  font-weight: 700;
+}
+.logo small,
+.logo .title {
+  font-weight: 300;
+  font-size: 50%;
+  text-transform: none;
+  line-height: 1;
+}
 #sidr-top {
   top: 0;
   left: 0;
@@ -877,24 +916,26 @@ a {
   /* @blue */
 
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  text-transform: uppercase;
+#header {
+  height: 200px;
+  overflow: hidden;
+  margin-top: 0;
+  background-color: #1abc9c;
+  /* @green */
+
 }
-p,
-li,
-td {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+#header .title {
+  width: 1280px;
+  margin: -180px auto;
+  padding-left: 300px;
+  color: #fff;
+  font-size: 20px;
 }
-pre {
-  font-family: Menlo, Consolas, "Courier New", Courier, "Liberation Mono", monospace;
+#header h1 {
+  width: 1280px;
+  margin: 100px auto 0;
+  background-color: inherit;
+  font-size: 120px;
 }
 html,
 body {
@@ -902,7 +943,6 @@ body {
   height: 100%;
 }
 .logo {
-  margin-top: 10%;
   font-family: "Lato";
   font-weight: 300;
   padding: 15px;
@@ -927,9 +967,6 @@ body {
 }
 .logo .last {
   font-weight: 700;
-}
-.logo:hover {
-  background-color: #3498db;
 }
 .logo .title {
   visibility: hidden;
