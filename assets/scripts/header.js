@@ -16,12 +16,12 @@ function ($) {
 
       $this.on({
         mouseenter: function () {
-          $portrait.css("display","none");
-          $image.css("display","block");
+          $portrait.toggleClass("hover");
+          $image.toggleClass("hover");
         },
         mouseleave: function () {
-          $portrait.css("display","block");
-          $image.css("display","none");
+          $portrait.toggleClass("hover");
+          $image.toggleClass("hover");
         }
       });
     });

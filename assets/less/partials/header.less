@@ -13,11 +13,12 @@
   border-bottom: 1px solid white;
 
   .title {
-    width: 1280px;
-    margin: -170px auto;
-    padding-left: 300px;
+    margin: 55px auto;
     color: #fff;
     font-size: 20px;
+    height: 100px;
+    padding: 25px 0;
+    .transition(all 0 ease-out);
   }
 
   .image {
@@ -29,33 +30,46 @@
     border-radius: 55px;
     overflow: hidden;
     .square(100px);
+    position: relative;
+  }
+  .image-image, .image-normal {
+    .box-sizing;
+    .square(100px);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .image-normal.hover {
+    .opacity(0);
+  }
+
+  .image-image {
+    padding: 20px;
+    .opacity(0);
+    &.hover { .opacity(1); }
+  }
+
+  .image-hook,
+  .image-image,
+  .image-normal {
+    .transition(all 0.5s ease-out);
   }
 
   .image-hook {
     cursor: pointer;
-  }
-
-  .image-image {
-    .box-sizing;
-    .square(100px);
-    padding: 20px;
-    display: none;
-  }
-
-  .image-hook, .image-image, .image-normal {
-    .transition(all 0.5s ease-out);
-  }
-
-  .image-hook:hover {
-    color: #2c3e50;
+    &:hover { color: #2c3e50; }
   }
 
   h1 {
-    width: 1280px;
+    float: right;
     margin: 114px auto 0;
-    background-color: inherit;
     font-size: 100px;
     text-align: right;
+
+    &:hover {
+      margin-top: 89px;
+    }
   }
 }
 
