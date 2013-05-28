@@ -1,7 +1,7 @@
 "use strict";
 
-define(["jquery","menu"],
-function ($     , menu) {
+define(["jquery","menu","header"],
+function ($     , menu,  header) {
   /**
    * Initializes this model.
    */
@@ -10,6 +10,9 @@ function ($     , menu) {
 
     console.log("----- starting menu");
     menu.init();
+
+    console.log("----- starting header");
+    header.init("#header");
   };
 
 

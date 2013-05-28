@@ -10,13 +10,44 @@
   overflow: hidden;
   margin-top: 0;
   background-color: @green;               /* @green */
+  border-bottom: 1px solid white;
 
   .title {
     width: 1280px;
-    margin: -180px auto;
+    margin: -170px auto;
     padding-left: 300px;
     color: #fff;
     font-size: 20px;
+  }
+
+  .image {
+    .inline-block;
+    float: left;
+    margin-top: -25px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 55px;
+    overflow: hidden;
+    .square(100px);
+  }
+
+  .image-hook {
+    cursor: pointer;
+  }
+
+  .image-image {
+    .box-sizing;
+    .square(100px);
+    padding: 20px;
+    display: none;
+  }
+
+  .image-hook, .image-image, .image-normal {
+    .transition(all 0.5s ease-out);
+  }
+
+  .image-hook:hover {
+    color: #2c3e50;
   }
 
   h1 {
@@ -27,3 +58,4 @@
     text-align: right;
   }
 }
+
