@@ -8,7 +8,7 @@
 // --------------------------------------------------
 
 
-// Clearfix
+// clearfix
 // --------
 .clearfix {
   *zoom: 1;
@@ -51,4 +51,20 @@
   *vertical-align: auto;
   zoom: 1;
   *display: inline
+}
+
+
+// line-though
+// -----------
+.lt {
+  &:before {
+    .transition(all .45s cubic-bezier(0.445, 0.05, 0.55, 0.95));
+    border-bottom: 2px solid white;
+    position: absolute;
+    content: "";
+    height: 165%;
+    margin-left: -5%;
+    width: 110%;
+    .opacity(0);
+  }
 }

@@ -1,28 +1,32 @@
 "use strict";
 
-define(["jquery"],
-function ($) {
+define(['helper/domReady!',"jquery"],
+function (doc      , $) {
 
   var $elem,
       $portrait,
       $hooks,
-      $images;
+      $images,
+      $wrap;
 
-  function listenToHooks($elems) {
+
+
+
+  function listen($elems) {
     $.each($elems, function () {
       var self = this,
           $this = $(this),
           $image = $("#"+$this.data("link"));
 
+      function toggle () {
+        $.each([$portrait, $image, $wrap], function () {
+          this.toggleClass("hover");
+        });
+      }
+
       $this.on({
-        mouseenter: function () {
-          $portrait.toggleClass("hover");
-          $image.toggleClass("hover");
-        },
-        mouseleave: function () {
-          $portrait.toggleClass("hover");
-          $image.toggleClass("hover");
-        }
+        mouseenter: toggle,
+        mouseleave: toggle
       });
     });
   }
@@ -34,12 +38,13 @@ function ($) {
       $elem = $(elm);
     }
 
+    $wrap     = $elem.find(".image");
     $portrait = $elem.find(".image-normal");
     $hooks    = $elem.find(".image-hook");
     $images   = $elem.find(".image-image");
 
-    listenToHooks($hooks);
-    console.log("------ header started");
+    listen($hooks);
+    console.log("------- header started");
   }
 
   return {

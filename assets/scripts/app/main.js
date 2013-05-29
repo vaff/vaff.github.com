@@ -2,16 +2,14 @@
 
 define(["jquery","menu","header"],
 function ($     , menu,  header) {
-  /**
-   * Initializes this model.
-   */
-  var init = function () {
-    console.log("----- init app");
 
-    console.log("----- starting menu");
-    menu.init();
+  function init () {
+    console.log("-- init app");
 
-    console.log("----- starting header");
+    console.log("---- starting menu");
+    menu.init("#menu");
+
+    console.log("---- starting header");
     header.init("#header");
   };
 

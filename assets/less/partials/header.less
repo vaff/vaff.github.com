@@ -3,7 +3,7 @@
 // --------------------------------------------------
 
 
-// banner
+// header
 // ------
 #header {
   height: 200px;
@@ -11,27 +11,78 @@
   margin-top: 0;
   background-color: @green;               /* @green */
   border-bottom: 1px solid white;
+}
 
+
+// logo
+// ----
+#header {
+  h1 {
+    float: right;
+    margin: 114px auto 0;
+    font-size: 100px;
+    text-align: right;
+    .transition(all .5s cubic-bezier(0.68, -0.55, 0.265, 1.55));
+
+    &:hover {
+      margin-top: 89px;
+    }
+  }
+}
+
+.logo {
+  font-family: "Lato";
+  font-weight: 300;
+  padding: 15px;
+  color: #fff;
+  text-align: center;
+  .transition(all .5s ease-out);
+
+  .last {
+    font-weight: 700;
+  }
+}
+
+
+
+
+// title
+// -----
+#header {
   .title {
     margin: 55px auto;
     color: #fff;
     font-size: 20px;
     height: 100px;
     padding: 25px 0;
-    .transition(all 0 ease-out);
   }
+}
 
+
+// title images
+// ------------
+#header {
   .image {
     .inline-block;
     float: left;
     margin-top: -25px;
     margin-right: 10px;
-    background-color: white;
     border-radius: 55px;
     overflow: hidden;
     .square(100px);
     position: relative;
+
+    &.hover {
+      background-color: white;
+    }
   }
+
+  .image-hook,
+  .image-image,
+  .image-normal {
+    .transition(all .8s cubic-bezier(0.445, 0.05, 0.55, 0.95));
+  }
+
   .image-image, .image-normal {
     .box-sizing;
     .square(100px);
@@ -40,8 +91,9 @@
     left: 0;
   }
 
-  .image-normal.hover {
-    .opacity(0);
+  .image-normal {
+    border-radius: 55px;
+    &.hover { .opacity(0); }
   }
 
   .image-image {
@@ -50,26 +102,8 @@
     &.hover { .opacity(1); }
   }
 
-  .image-hook,
-  .image-image,
-  .image-normal {
-    .transition(all 0.5s ease-out);
-  }
-
   .image-hook {
     cursor: pointer;
-    &:hover { color: #2c3e50; }
-  }
-
-  h1 {
-    float: right;
-    margin: 114px auto 0;
-    font-size: 100px;
-    text-align: right;
-
-    &:hover {
-      margin-top: 89px;
-    }
+    &:hover { color: @dark; }                 /* @dark */
   }
 }
-
