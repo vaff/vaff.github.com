@@ -1,16 +1,19 @@
 "use strict";
 
-define(['helper/domReady!',"jquery"],
-function (doc      , $) {
+define(['helper/domReady!',"jquery","lib/jquery.fitText"],
+function (doc             , $      , fitText) {
 
-  var $elem,
+  var $txt,
+      $wrap,
+      $elem,
       $portrait,
       $hooks,
-      $images,
-      $wrap;
+      $images;
 
 
-
+  function fitLogo ($elm) {
+    $elm.fitText(.6);
+  }
 
   function listen($elems) {
     $.each($elems, function () {
@@ -38,12 +41,14 @@ function (doc      , $) {
       $elem = $(elm);
     }
 
+    $txt      = $("#fittext a");
     $wrap     = $elem.find(".image");
     $portrait = $elem.find(".image-normal");
     $hooks    = $elem.find(".image-hook");
     $images   = $elem.find(".image-image");
 
     listen($hooks);
+    fitLogo($txt);
     console.log("------- header started");
   }
 
