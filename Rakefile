@@ -22,7 +22,7 @@ namespace :jekyll do
 
   # Usage: rake jekyll:serve
   desc 'Serve and watch the site with Jekyll'
-  task :serve do
+  task :serve => :'env:development' do
     system 'jekyll serve --watch'
   end # task :serve
 
@@ -97,28 +97,28 @@ namespace :build do
   end # task :less
 
   desc 'Build and compress site'
-  task :all => [:js, :less]
+  task :all => [:js, :less, :'env:production']
 
 end # namespace :build
 
 
 namespace :env do
 
-  file "_layouts/production.html" => "_layouts/dynamic.html" do |t|
-    sh "cp #{t.prerequisites.first} #{t.name}"
-  end
-
-  file "_layouts/development.html" => "_layouts/dynamic.html" do |t|
-    sh "cp #{t.prerequisites.first} #{t.name}"
-  end
-
-
   desc 'Change the enviroment to production'
-  task :production => "_layouts/production.html"
+  task :production do
+     sh "cp _includes/production.html _includes/dynamic.html"
+  end
 
 
   desc 'Change the enviroment to development'
-  task :development => "_layouts/development.html"
+  task :development do
+    sh "cp _includes/development.html _includes/dynamic.html"
+  end
 
+  desc 'Shorthand development'
+  task :d => :development
+
+  desc 'Shorthand production'
+  task :p => :production
 end
 
