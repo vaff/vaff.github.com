@@ -16,55 +16,109 @@ CONFIG = {
 }
 
 # Default :serve
-task :default => [:serve]
+task :default => [:'jekyll:serve']
+
+namespace :jekyll do
+
+  # Usage: rake jekyll:serve
+  desc 'Serve and watch the site with Jekyll'
+  task :serve do
+    system 'jekyll serve --watch'
+  end # task :serve
 
 
-# Usage: rake post title="A Title" [date="2012-02-09"]
-desc "Begin a new post in #{CONFIG['posts']}"
-task :post do
-  abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
-  title = ENV["title"] || "new-post"
-  slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-  date = Time.new
-  datef = date.strftime('%Y-%m-%d')
+  # Usage: rake jekyll:post title="A Title" [date="2012-02-09"]
+  desc "Begin a new post in #{CONFIG['posts']}"
+  task :post do
+    abort("rake aborted: '#{CONFIG['posts']}' directory not found.") unless FileTest.directory?(CONFIG['posts'])
+    title = ENV["title"] || "new-post"
+    slug = title.downcase.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
+    date = Time.new
+    datef = date.strftime('%Y-%m-%d')
 
-  filename = File.join(CONFIG['posts'], "#{datef}-#{slug}.#{CONFIG['post_ext']}")
-  if File.exist?(filename)
-    abort("That name is in use already")
+    filename = File.join(CONFIG['posts'], "#{datef}-#{slug}.#{CONFIG['post_ext']}")
+    if File.exist?(filename)
+      abort("That name is in use already")
+    end
+
+    puts "Creating new post: #{filename}"
+    open(filename, 'w') do |post|
+      post.puts "---"
+      post.puts "layout: post"
+      post.puts "title: \"#{title.gsub(/-/,' ')}\""
+      post.puts "date: #{date.strftime('%Y-%m-%d %H:%M:%S')}"
+      post.puts 'description: ""'
+      post.puts "reading: "
+      post.puts "category: "
+      post.puts "tags: []"
+      post.puts "---"
+    end
+  end # task :post
+
+end # namespace :jekyll
+
+
+namespace :site do
+
+  # Usage: rake site:push
+  desc 'Push the repository to GitHub Pages'
+  task :push do
+    # Commit and push.
+    puts "Committing and pushing to GitHub Pages..."
+    sha = `git log`.match(/[a-z0-9]{40}/)[0]
+
+    sh "git add ."
+    sh "git commit -m 'Updating to #{sha}.'"
+    sh "git push origin"
+
+    puts 'Done.'
+  end # task :site
+
+
+  desc 'Build site and push respositry to GitHub Pages'
+  task :publish => [:'build:all', :push]
+end # namespace :site
+
+
+namespace :build do
+
+  desc 'Build Javascript with requirejs'
+  task :js do
+    puts "Building Javascript with RequireJS"
+    system 'node _build/r.js -o _build/build.js'
+    puts "Done."
+  end # task:js
+
+  desc 'Build and compress LESS into CSS'
+  task :less do
+    puts "Building and compressing LESS into CSS"
+    system 'lessc --yui-compress assets/less/main.less assets/css/style.min.css'
+    puts "Done."
+  end # task :less
+
+  desc 'Build and compress site'
+  task :all => [:js, :less]
+
+end # namespace :build
+
+
+namespace :env do
+
+  file "_layouts/production.html" => "_layouts/dynamic.html" do |t|
+    sh "cp #{t.prerequisites.first} #{t.name}"
   end
 
-  puts "Creating new post: #{filename}"
-  open(filename, 'w') do |post|
-    post.puts "---"
-    post.puts "layout: post"
-    post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts "date: #{date.strftime('%Y-%m-%d %H:%M:%S')}"
-    post.puts 'description: ""'
-    post.puts "reading: "
-    post.puts "category: "
-    post.puts "tags: []"
-    post.puts "---"
+  file "_layouts/development.html" => "_layouts/dynamic.html" do |t|
+    sh "cp #{t.prerequisites.first} #{t.name}"
   end
-end # task :post
 
 
-desc 'Build site'
-task :build => [:build_javascript, :build_less] do
-    puts "Site build"
+  desc 'Change the enviroment to production'
+  task :production => "_layouts/production.html"
+
+
+  desc 'Change the enviroment to development'
+  task :development => "_layouts/development.html"
+
 end
 
-desc 'Build javascript with requirejs'
-task :build_javascript do
-  system 'node _build/r.js -o _build/build.js'
-end
-
-desc 'Build LESS css'
-task :build_less do
-  system 'lessc --yui-compress assets/less/main.less assets/css/style.min.css'
-end
-
-
-desc 'Serve and watch the site'
-task :serve do
-  system 'jekyll serve --watch'
-end
