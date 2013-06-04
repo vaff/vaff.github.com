@@ -1,6 +1,5 @@
 require "rubygems"
 require 'rake'
-require 'yaml'
 require 'time'
 
 # Rake tools
@@ -76,7 +75,7 @@ namespace :site do
 
 
   desc 'Build site and push respositry to GitHub Pages'
-  task :publish => [:'build:all', :push]
+  task :publish => [:'build:all', :push, :'env:development']
 end # namespace :site
 
 
