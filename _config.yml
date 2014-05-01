@@ -10,3 +10,4 @@ paginate: 3 //the number of post per page
 future: false
 
 exclude: ["README.md"]
+markdown: kramdown
