@@ -43,7 +43,12 @@ function dotime(){
 	var secs = d.getSeconds();
 
 	hours += 1;
-
+	
+	var hex = "#E53935";
+	if (mins >= 45 || (hours <= 10 && hour >= 8)) {
+		hex = "#4CAF50";
+	}
+    
 	if (hours < 10){hours = "0" + hours};
 	if (mins < 10){mins = "0" + mins};
 	if (secs < 10){secs = "0" + secs};
@@ -55,10 +60,6 @@ function dotime(){
 
 	$("#t").html(hours +" : "+ mins +" : "+ secs);
 
-    var hex = "#E53935";
-    if (mins >= 45) {
-        hex = "#4CAF50";
-    }
 
 	document.body.style.background = hex;
 
