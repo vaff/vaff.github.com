@@ -82,7 +82,7 @@ function dotime(){
 	var secs = d.getSeconds();
 	
 	var hex = "#4CAF50";
-	if (mins < 45 || (hours <= 10 && hours >= 8)) {
+	if (mins < 45 || (hours < 10 && hours > 8)) {
 		hex = "#E53935";
 	}
     
