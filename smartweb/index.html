@@ -78,9 +78,9 @@ function dotime(){
 	var mins = d.getMinutes();
 	var secs = d.getSeconds();
 	
-	var hex = "#E53935";
-	if (mins >= 45 || (hours <= 10 && hours >= 8)) {
-		hex = "#4CAF50";
+	var hex = "#4CAF50";
+	if (mins < 45 || (hours <= 10 && hours >= 8)) {
+		hex = "#E53935";
 	}
     
 	if (hours < 10){hours = "0" + hours};
