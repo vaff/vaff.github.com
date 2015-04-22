@@ -88,18 +88,18 @@ function dotime(){
 		orange = "#f29438",
 		hex = "";
 	
-	if ((hours > 7 && hours < 10) || mins < 45) {
-		hex = red;
-		$(".fa-user-times").css("display","inline-block");
+	if ((hours > 7 && hours < 10) || mins > 45) {
+		hex = green;
+		$(".fa-user-times").css("display","none";
 		$(".fa-cutlery").css("display","none");
 	} else if (hours == 12 && (mins >= 0 && mins < 30)) {
 		hex = orange;	
 		$(".fa-cutlery").css("display","inline-block");
 		$(".fa-user-times").css("display","none");
 	} else {
-		hex = green;
+		hex = red;
 		$(".fa-cutlery").css("display","none");
-		$(".fa-user-times").css("display","none");
+		$(".fa-user-times").css("display","inline-block");
 	}
     
 	if (hours < 10){hours = "0" + hours};
