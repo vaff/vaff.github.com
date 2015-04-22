@@ -59,7 +59,7 @@
 }
 
 table { position:absolute; width:100%; height:100%; top:0px; left:0px;}
-i { color: white; position: absolute; bottom: 20px; right: 40px; font-size: 12em !important;}
+.fa { color: white; position: absolute; bottom: 20px; right: 40px; font-size: 12em !important; display: none;}
 </style>
 </head>
 
@@ -68,7 +68,7 @@ i { color: white; position: absolute; bottom: 20px; right: 40px; font-size: 12em
 <table><tbody><tr><td height="100%" width="100%" align="center" valign="middle">
 <h1 id="t"></h1><br>
 <h2>System: RBG - Kundeudvikling: DJ</h2>
-<i class="fa fa-user-times fa-5"></i></td></tr></tbody></table>
+<i class="fa fa-user-times fa-5"></i><i class="fa fa-cutlery fa-5"></i></td></tr></tbody></table>
 
 <script type="text/javascript">
 
@@ -90,13 +90,16 @@ function dotime(){
 	
 	if ((hours > 7 && hours < 10) || mins < 45)) {
 		hex = red;
-		$("i").css("display","inline-block");
+		$(".fa-user-times").css("display","inline-block");
+		$(".fa-cutlery").css("display","none");
 	} else if (hours == 12 && (mins >= 0 && mins < 30)) {
 		hex = orange;	
-		$("i").css("display","inline-block");
+		$(".fa-cutlery").css("display","inline-block");
+		$(".fa-user-times").css("display","none");
 	} else {
 		hex = green;
-		$("i").css("display","none");
+		$(".fa-cutlery").css("display","none");
+		$(".fa-user-times").css("display","none");
 	}
     
 	if (hours < 10){hours = "0" + hours};
