@@ -74,19 +74,28 @@ i { color: white; position: absolute; bottom: 20px; right: 40px; font-size: 12em
 
 
 function dotime(){
-
 	$("body").css({"transition": "all 0.8s", "-webkit-transition": "all 0.8s"});
 
-	var d = new Date();
-	var hours = d.getHours();
-	var mins = d.getMinutes();
-	var secs = d.getSeconds();
+	// time
+	var d = new Date(),
+		hours = d.getHours(),
+		mins = d.getMinutes(),
+		secs = d.getSeconds();
 	
-	var hex = "#4CAF50";
-	if (mins < 45 || (hours < 10 && hours > 8)) {
-		hex = "#E53935";
+	// colors
+	var red = "#E53935",
+		green = "#4CAF50",
+		orange = "#f29438",
+		hex = "";
+	
+	if ((hours > 7 && hours < 10) || mins < 45)) {
+		hex = red;
+		$("i").css("display","inline-block");
+	} else if (hours == 12 && (mins >= 0 && mins < 30)) {
+		hex = orange;	
 		$("i").css("display","inline-block");
 	} else {
+		hex = green;
 		$("i").css("display","none");
 	}
     
